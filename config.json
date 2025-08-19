@@ -1,0 +1,36 @@
+{
+    "port": 25600,
+    "log_remaining_number": 5,
+    "skinDomains": [
+        "littleskin.cn"
+    ],
+    "apis": [
+        {
+            "id": "original",
+            "name": "Official"
+        },
+        {
+            "id": "littleskin",
+            "name": "LittleSkin",
+            "root": "https://littleskin.cn/api/yggdrasil"
+        }
+    ],
+    "default": "original",
+    "method": [
+        {
+            "url": "/login",
+            "handles": [
+                "original",
+                "littleskin"
+                
+            ]
+        }
+    ],
+    "push": {
+        "handles": {
+            "xiaoma_233": "littleskin",
+            "Fengmu_233": "original",
+            "Nash_233": "original"
+        }
+    }
+}
